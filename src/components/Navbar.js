@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from '../img/logo_neu_neu_neu.png'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
@@ -20,6 +20,12 @@ const Navbar = () => (
         </Link>
         <Link className="navbar-item" to="/products">
           Products
+        </Link>
+        <Link className="navbar-item" to="/events">
+          Agenda
+        </Link>
+        <Link className="navbar-item" to="/anmeldung">
+          Anmeldung
         </Link>
       </div>
       <div className="navbar-end">
