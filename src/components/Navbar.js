@@ -5,12 +5,12 @@ import github from '../img/github-icon.svg'
 import logo from '../img/logo_neu_neu_neu.png'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
+  <nav className="navbar is-transparent" style={{ height: '140px' }}>
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+          <figure className="image" style={{width: 100 + 'px'}}>
+            <img src={logo} alt="Kaldi" style={{ maxHeight: '100%' }}/>
           </figure>
         </Link>
       </div>
@@ -21,7 +21,7 @@ const Navbar = () => (
         <Link className="navbar-item" to="/products">
           Products
         </Link>
-        <Link className="navbar-item" to="/events">
+        <Link className="navbar-item" to="/event">
           Agenda
         </Link>
         <Link className="navbar-item" to="/anmeldung">
