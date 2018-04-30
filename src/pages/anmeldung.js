@@ -10,6 +10,8 @@ export default class Anmeldung extends React.Component {
       strasse: '',
       plz: '4626',
       ort: 'Niederbuchsiten',
+      email: '',
+      telefon: ''
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -20,6 +22,10 @@ export default class Anmeldung extends React.Component {
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
 
+    if(!value) {
+
+    }
+
     this.setState({
       [name]: value
     });
@@ -28,7 +34,8 @@ export default class Anmeldung extends React.Component {
   render() {
     return (
 <section className="section">
-  <form name="anmeldung" method="POST" action="/angemeldet" data-netlify-honeypot="bot-field" data-netlify="true">
+  <form name="anmeldung" method="POST" data-netlify-honeypot="bot-field" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
 <div className="columns">
    <div className="column is-4 is-offset-2">
       <div className="field">
@@ -73,7 +80,7 @@ export default class Anmeldung extends React.Component {
       <div className="field">
          <label className="label">Email</label>
          <div className="control">
-            <input className="input is-danger" type="email" placeholder="Email input"  value={this.state.email} name="nachname"
+            <input className="input is-danger" type="email"  value={this.state.email} name="email"
                    onChange={this.handleInputChange} />
             <span className="icon is-small is-left">
             <i className="fa fa-envelope"></i>
@@ -85,9 +92,10 @@ export default class Anmeldung extends React.Component {
          <p className="help is-danger">This email is invalid</p>
       </div>
       <div className="field">
-         <label className="label">Phone</label>
+         <label className="label">Telefon / Mobile</label>
          <div className="control">
-            <input className="input" type="text" placeholder="Phone Number" />
+            <input className="input" type="text" value={this.state.telefon} name="telefon"
+                   onChange={this.handleInputChange}/>
          </div>
       </div>
       <div className="field">
