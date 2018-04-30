@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { EventPostTemplate } from '../../templates/event-post'
+import  {  EventPostTemplate } from '../../templates/event-post'
 
 const EventPostPreview = ({ entry, widgetFor }) => (
   <EventPostTemplate
@@ -8,6 +8,8 @@ const EventPostPreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
     title={entry.getIn(['data', 'title'])}
+    gueltigVon={entry.getIn(['data', 'gueltigVon'])}
+    gueltigBis={entry.getIn(['data', 'gueltigBis'])}
   />
 )
 

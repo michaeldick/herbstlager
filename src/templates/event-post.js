@@ -11,6 +11,9 @@ export const EventPostTemplate = ({
   description,
   tags,
   title,
+  gueltigVon,
+  gueltigBis,
+  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -83,6 +86,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        gueltigVon(formatString: "MMMM DD, YYYY")
+        gueltigBis(formatString: "MMMM DD, YYYY")
         title
         description
         tags

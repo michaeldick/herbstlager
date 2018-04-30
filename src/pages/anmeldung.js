@@ -1,17 +1,21 @@
 import React from 'react'
+import FormErrors from '../components/FormErrors'
 
 export default class Anmeldung extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      nachname: 'email',
       nachname: '',
       vorname: '',
+      nachnameValid: false,
+      vornameValid: false,
       strasse: '',
       plz: '4626',
       ort: 'Niederbuchsiten',
       email: '',
-      telefon: ''
+      telefon: '',
+      formErrors: {name: '', vorname: ''},
+      formValid: false
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -22,6 +26,9 @@ export default class Anmeldung extends React.Component {
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
 
+    this.setState({[name]: value},
+      () => { this.validateField(name, value) });
+
     if(!value) {
 
     }
@@ -30,6 +37,33 @@ export default class Anmeldung extends React.Component {
       [name]: value
     });
   }
+  validateField(fieldName, value) {
+    let fieldValidationErrors = this.state.formErrors;
+    let nameValid = this.state.nameValid;
+    let vornameValid = this.state.vornameValid;
+
+    switch(fieldName) {
+      case 'name':
+        nameValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+        fieldValidationErrors.name = nameValid ? '' : ' is invalid';
+        break;
+      case 'vorname':
+        vornameValid = value.length >= 6;
+        fieldValidationErrors.vorname = vornameValid? '': ' is too short';
+        break;
+      default:
+        break;
+    }
+    this.setState({formErrors: fieldValidationErrors,
+      name: nameValid,
+      vorname: vornameValid
+    }, this.validateForm);
+  }
+
+  validateForm() {
+    this.setState({formValid: this.state.nameValid && this.state.vornameValid});
+  }
+
 
   render() {
     return (
@@ -38,6 +72,9 @@ export default class Anmeldung extends React.Component {
   <input type="hidden" name="form-name" value="contact" />
 <div className="columns">
    <div className="column is-4 is-offset-2">
+     <div className="panel panel-default">
+     <FormErrors formErrors={this.state.formErrors} />
+   </div>
       <div className="field">
          <label className="label">Name</label>
          <div className="control">
