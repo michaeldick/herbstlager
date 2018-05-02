@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-transparent" style={{ height: '140px', zIndex:2 }}>
+      <nav className="navbar is-transparent" style={{ height: '140px', zIndex:10 }}>
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
@@ -36,7 +36,7 @@ class Navbar extends React.Component {
               <span aria-hidden="true"></span>
             </a>
           </div>
-          <div className={"navbar-menu " + (this.state.navToggle ? "is-active" : "")} >
+          <div className={"navbar-menu is-mobile " + (this.state.navToggle ? "is-active" : "")} >
             <div className="navbar-start has-text-centered is-size-5 has-text-weight-bold">
               <Link className="navbar-item is-mobile" to="/event">
                 <p className="has-text-white"><i className="fa fa-calendar"></i>

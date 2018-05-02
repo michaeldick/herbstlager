@@ -11,13 +11,48 @@ export default class IndexPage extends React.Component {
       <section className="section">
         <div className="container">
           <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+            <h1 className="has-text-weight-bold is-size-2">Aktuelle Anlässe</h1>
           </div>
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
-              <div
-                className="content"
+              <div key={post.id}>
+                <div class="card" >
+                  <div class="card-image">
+                    <figure class="image is-3by1">
+                      <img src="https://bulma.io/images/placeholders/720x240.png" alt="Placeholder image" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-48x48">
+                          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                        </figure>
+                      </div>
+                      <div class="media-content">
+
+                        <Link className="has-text-primary" to={post.fields.slug}>
+                          <h3 className="title is-4 has-text-primary">{post.frontmatter.title}</h3>
+                        </Link>
+                        <p class="subtitle is-6">@johnsmith</p>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.fields.slug}>
+                        Keep Reading →
+                  </Link>
+                    </div>
+                  </div>
+                </div>
+                <div><hr /></div>
+              </div>
+              /* <div
+                className="container"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
@@ -36,7 +71,7 @@ export default class IndexPage extends React.Component {
                     Keep Reading →
                   </Link>
                 </p>
-              </div>
+              </div> */
             ))}
         </div>
       </section>
