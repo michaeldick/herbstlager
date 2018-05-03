@@ -1,9 +1,10 @@
 ---
 templateKey: event-post
 title: Elternabend
-date: 2018-06-30T20:36:07+02:00
-gueltigVon: 2018-06-03T20:36:07+02:00
-gueltigBis: 2018-07-08T20:36:07+02:00
+date: 2018-06-30T18:36:07.000Z
+gueltigVon: 2018-06-03T18:36:07.000Z
+gueltigBis: 2018-07-08T18:36:07.000Z
+bildgross: /img/chemex.jpg
 description: Info-Anlass für die Eltern
 tags:
   - anlass elternabend
