@@ -80,7 +80,7 @@ export default class Anmeldung extends React.Component {
     return (
       <section className="section">
         <form name="anmeldung" method="POST" data-netlify-honeypot="bot-field" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="anmeldung" />
           <div className="columns">
             <div className="column is-4 is-offset-2">
               <div className="panel panel-default">

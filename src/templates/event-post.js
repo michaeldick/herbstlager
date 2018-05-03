@@ -13,6 +13,7 @@ export const EventPostTemplate = ({
   title,
   gueltigVon,
   gueltigBis,
+  bildgross,
   date,
   helmet,
 }) => {
@@ -88,6 +89,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         gueltigVon(formatString: "MMMM DD, YYYY")
         gueltigBis(formatString: "MMMM DD, YYYY")
+        bildgross
         title
         description
         tags

@@ -21,8 +21,8 @@ class NavbarNew extends React.Component {
 
   render() {
     return (
-      <nav class="navbar is-primary">
-        <div class="navbar-brand">
+      <nav className="navbar is-primary">
+        <div className="navbar-brand">
         <Link to="/" className="navbar-item">
               <figure className="image" style={{ width: 160 + 'px' }}>
                 <img src={logo} alt="Kaldi" style={{ maxHeight: '100%' }} />
@@ -35,7 +35,7 @@ class NavbarNew extends React.Component {
         </div>
 
         <div id="navbarExampleTransparentExample" className={"navbar-menu " + (this.state.navToggle ? "is-active" : "")}>
-          <div class="navbar-start has-text-centered is-size-5 has-text-weight-bold">
+          <div className="navbar-start has-text-centered is-size-5 has-text-weight-bold">
             <Link className="navbar-item" to="/event" onClick={this.toggleNav}>
                 <p className="has-text-black"><i className="fa fa-calendar"></i>
                   <br />Agenda</p>

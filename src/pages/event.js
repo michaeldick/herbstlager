@@ -21,6 +21,7 @@ export default class EventPage extends React.Component {
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
+              <img src={post.frontmatter.bildgross} />
                 <p>
                   <Link className="has-text-primary" to={post.fields.slug}>
                     {post.frontmatter.title}
@@ -69,6 +70,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             gueltigVon(formatString: "MMMM DD, YYYY")
             gueltigBis(formatString: "MMMM DD, YYYY")
+            bildgross
           }
         }
       }
