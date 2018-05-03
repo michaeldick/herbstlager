@@ -16,7 +16,7 @@ export default class IndexPage extends React.Component {
           {posts
             .filter(post => post.node.frontmatter.templateKey === 'blog-post')
             .map(({ node: post }) => (
-              <div key={post.id}>
+              <div key={post.id} style={{width: '400px'}}>
                 <div className="card" >
                   <div className="card-image">
                     <figure className="image is-3by1">

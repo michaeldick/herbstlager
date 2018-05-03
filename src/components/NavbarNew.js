@@ -44,10 +44,6 @@ class NavbarNew extends React.Component {
                 <p className="has-text-black"><i className="fa fa-file-text-o"></i>
                   <br />Anmeldung</p>
               </Link>
-              <Link className="navbar-item" to="/formtest" onClick={this.toggleNav}>
-                <p className="has-text-black"><i className="fa fa-file-text-o"></i>
-                  <br />Anmeldung2</p>
-              </Link>
               <Link className="navbar-item" to="/about" onClick={this.toggleNav}>
                 <p className="has-text-black"><i className="fa fa-info"></i>
                   <br />About</p>
