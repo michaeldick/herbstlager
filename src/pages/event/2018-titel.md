@@ -9,5 +9,7 @@ description: deschkriptschn
 docs:
   - datei: /img/tutorials.png
     name: tescht1
+  - datei: /img/flyer_7_mai_18.pdf
+    name: pede EFF
 ---
 body body
