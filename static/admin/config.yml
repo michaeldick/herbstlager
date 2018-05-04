@@ -33,18 +33,13 @@ collections:
       - {label: "Bild Gross", name: "bildgross", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - name: "authors"
-        label: "Authors"
+      - name: "docs"
+        label: "Dokumente"
         widget: "list"
         fields:
-          - name: authors
-            label: Authors
-            label_singular: "Author"
-            widget: list
-            fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
-
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Datei", name: "datei", widget: "file"}
+              
   - name: "pages"
     label: "Pages"
     files:
