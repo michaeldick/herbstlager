@@ -33,31 +33,9 @@ collections:
       - {label: "Bild Gross", name: "bildgross", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
-  - name: "settings"
-    label: "Settings"
-    delete: false # Prevent users from deleting documents in this collection
-    editor:
-      preview: false
-    files:
-      - name: "general"
-        label: "Site Settings"
-        description: "General Site Settings"
-        file: "src/pages/globalsettings/index.md"
-        fields:
-          - {label: "Global title", name: "site_title", widget: "string"}
-          - label: "Post Settings"
-            name: posts
-            widget: "object"
-            fields:
-              - {label: "Number of posts on frontpage", name: front_limit, widget: number}
-              - {label: "Default Author", name: author, widget: string}
-              - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
-
       - name: "authors"
         label: "Authors"
-        file: "src/pages/authors/index.md"
+        file: "_data/authors.yml"
         description: "Author descriptions"
         fields:
           - name: authors
@@ -66,7 +44,8 @@ collections:
             widget: list
             fields:
               - {label: "Name", name: "name", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}      
+              - {label: "Description", name: "description", widget: "markdown"}
+
   - name: "pages"
     label: "Pages"
     files:
@@ -91,3 +70,110 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+
+  - name: "kitchenSink" # all the things in one entry, for documentation and quick testing
+    label: "Kitchen Sink"
+    folder: "_sink"
+    create: true
+    fields:
+      - label: "Related Post"
+        name: "post"
+        widget: "relationKitchenSinkPost"
+        collection: "posts"
+        displayFields: ["title", "date"]
+        searchFields: ["title", "body"]
+        valueField: "title"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Boolean", name: "boolean", widget: "boolean", default: true}
+      - {label: "Text", name: "text", widget: "text"}
+      - {label: "Number", name: "number", widget: "number"}
+      - {label: "Markdown", name: "markdown", widget: "markdown"}
+      - {label: "Datetime", name: "datetime", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "File", name: "file", widget: "file"}
+      - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+      - {label: "Hidden", name: "hidden", widget: "hidden", default: "hidden"}
+      - label: "Object"
+        name: "object"
+        widget: "object"
+        fields:
+          - label: "Related Post"
+            name: "post"
+            widget: "relationKitchenSinkPost"
+            collection: "posts"
+            searchFields: ["title", "body"]
+            valueField: "title"
+          - {label: "String", name: "string", widget: "string"}
+          - {label: "Boolean", name: "boolean", widget: "boolean", default: false}
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Number", name: "number", widget: "number"}
+          - {label: "Markdown", name: "markdown", widget: "markdown"}
+          - {label: "Datetime", name: "datetime", widget: "datetime"}
+          - {label: "Date", name: "date", widget: "date"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "File", name: "file", widget: "file"}
+          - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+      - label: "List"
+        name: "list"
+        widget: "list"
+        fields:
+          - {label: "String", name: "string", widget: "string"}
+          - {label: "Boolean", name: "boolean", widget: "boolean"}
+          - {label: "Text", name: "text", widget: "text"}
+          - {label: "Number", name: "number", widget: "number"}
+          - {label: "Markdown", name: "markdown", widget: "markdown"}
+          - {label: "Datetime", name: "datetime", widget: "datetime"}
+          - {label: "Date", name: "date", widget: "date"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "File", name: "file", widget: "file"}
+          - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+          - label: "Object"
+            name: "object"
+            widget: "object"
+            fields:
+              - {label: "String", name: "string", widget: "string"}
+              - {label: "Boolean", name: "boolean", widget: "boolean"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Number", name: "number", widget: "number"}
+              - {label: "Markdown", name: "markdown", widget: "markdown"}
+              - {label: "Datetime", name: "datetime", widget: "datetime"}
+              - {label: "Date", name: "date", widget: "date"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "File", name: "file", widget: "file"}
+              - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+              - label: "List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - label: "Related Post"
+                    name: "post"
+                    widget: "relationKitchenSinkPost"
+                    collection: "posts"
+                    searchFields: ["title", "body"]
+                    valueField: "title"
+                  - {label: "String", name: "string", widget: "string"}
+                  - {label: "Boolean", name: "boolean", widget: "boolean"}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Number", name: "number", widget: "number"}
+                  - {label: "Markdown", name: "markdown", widget: "markdown"}
+                  - {label: "Datetime", name: "datetime", widget: "datetime"}
+                  - {label: "Date", name: "date", widget: "date"}
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "File", name: "file", widget: "file"}
+                  - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
+                  - {label: "Hidden", name: "hidden", widget: "hidden", default: "hidden"}
+                  - label: "Object"
+                    name: "object"
+                    widget: "object"
+                    fields:
+                      - {label: "String", name: "string", widget: "string"}
+                      - {label: "Boolean", name: "boolean", widget: "boolean"}
+                      - {label: "Text", name: "text", widget: "text"}
+                      - {label: "Number", name: "number", widget: "number"}
+                      - {label: "Markdown", name: "markdown", widget: "markdown"}
+                      - {label: "Datetime", name: "datetime", widget: "datetime"}
+                      - {label: "Date", name: "date", widget: "date"}
+                      - {label: "Image", name: "image", widget: "image"}
+                      - {label: "File", name: "file", widget: "file"}
+                      - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
