@@ -20,8 +20,7 @@ export default class EventPage extends React.Component {
               <div key={post.id}>
                 <div
                   className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em', width: '800px' }}
-                >
+                  style={{ border: '1px solid #eaecee', padding: '2em 4em', width: '800px' }} >
                   <img src={post.frontmatter.bildgross} />
                   <p>
                     <Link className="has-text-primary" to={post.fields.slug}>
