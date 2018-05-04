@@ -35,7 +35,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - name: "authors"
         label: "Authors"
-        description: "Author descriptions"
+        widget: "list"
         fields:
           - name: authors
             label: Authors
