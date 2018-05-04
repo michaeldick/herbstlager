@@ -44,7 +44,7 @@ collections:
       - name: "general"
         label: "Site Settings"
         description: "General Site Settings"
-        create: true
+        file: "src/pages/globalsettings/index.md"
         fields:
           - {label: "Global title", name: "site_title", widget: "string"}
           - label: "Post Settings"
@@ -57,7 +57,7 @@ collections:
 
       - name: "authors"
         label: "Authors"
-        create: true
+        file: "src/pages/authors/index.md"
         description: "Author descriptions"
         fields:
           - name: authors
