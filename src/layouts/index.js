@@ -5,7 +5,8 @@ import Helmet from 'react-helmet'
 import Navbar from '../components/Navbar'
 import NavbarNew from '../components/NavbarNew'
 
-import 'font-awesome/css/font-awesome.css';
+import 'font-awesome/css/font-awesome.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import './all.sass'
 
 

@@ -90,7 +90,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Name</label>
                 <div className="control">
                   <input className="input" type="text" placeholder="Name"
-                    value={this.state.nachname} name="nachname"
+                    value={this.state.nachname} name="nachname" autoComplete='family-name'
                     onChange={this.handleInputChange} /> {this.state.nachname.length > 3 ? "Korrekt" : "Fehler"}
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Vorname</label>
                 <div className="control">
                   <input className="input is-success" type="text" placeholder="Text input"
-                    value={this.state.vorname} name="vorname"
+                    value={this.state.vorname} name="vorname" autoComplete='given-name' 
                     onChange={this.handleInputChange} />
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Strasse</label>
                 <div className="control">
                   <input className="input" type="text" placeholder="Text input"
-                    value={this.state.strasse} name="strasse"
+                    value={this.state.strasse} name="strasse" autoComplete='address-line1'
                     onChange={this.handleInputChange} />
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">PLZ</label>
                 <div className="control">
                   <input className="input" type="text"
-                    value={this.state.plz} name="plz"
+                    value={this.state.plz} name="plz" autoComplete='postal-code'
                     onChange={this.handleInputChange} />
                 </div>
               </div>
@@ -122,13 +122,15 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Ort</label>
                 <div className="control">
                   <input className="input" type="text" placeholder="Text input" value={this.state.ort} name="ort"
+                  autoComplete='address-level2'
                     onChange={this.handleInputChange} />
                 </div>
               </div>
               <div className="field">
                 <label className="label">Email</label>
                 <div className="control">
-                  <input className={"input " + (!this.state.emailValid ? "is-danger" : "")} type="email" value={this.state.email} name="email"
+                  <input className={"input " + (!this.state.emailValid ? "is-danger" : "")} 
+                  type="email" value={this.state.email} name="email" autoComplete='email'
                     onChange={this.handleInputChange} />
                 
                 
@@ -148,7 +150,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Telefon / Mobile</label>
                 <div className="control">
                   <input className="input" type="text" value={this.state.telefon} name="telefon"
-                    onChange={this.handleInputChange} />
+                    onChange={this.handleInputChange} autoComplete='tel' />
                 </div>
               </div>
               <div className="field">

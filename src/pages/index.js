@@ -25,17 +25,10 @@ export default class IndexPage extends React.Component {
                   </div>
                   <div className="card-content">
                     <div className="media">
-                      <div className="media-left">
-                        <figure className="image is-48x48">
-                          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-                        </figure>
-                      </div>
                       <div className="media-content">
-
                         <Link className="has-text-primary" to={post.fields.slug}>
                           <h3 className="title is-4 has-text-primary">{post.frontmatter.title}</h3>
                         </Link>
-                        <p className="subtitle is-6">@johnsmith</p>
                       </div>
                     </div>
 

@@ -8,8 +8,7 @@ const EventPostPreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
     title={entry.getIn(['data', 'title'])}
-    gueltigVon={entry.getIn(['data', 'gueltigVon'])}
-    gueltigBis={entry.getIn(['data', 'gueltigBis'])}
+    sichtbar={entry.getIn(['data', 'sichtbar'])}
     bildgross={entry.getIn(['data', 'bildgross'])}
   />
 )

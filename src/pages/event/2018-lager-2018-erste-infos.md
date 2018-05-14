@@ -2,8 +2,7 @@
 templateKey: event-post
 title: Lager 2018 - erste Infos
 date: 2018-05-01T18:33:36.496Z
-gueltigVon: 2018-05-06T18:33:36.000Z
-gueltigBis: 2018-07-01T18:33:36.000Z
+sichtbar: true
 bildgross: /img/products-grid2.jpg
 description: Vorab einige Informationen
 tags:

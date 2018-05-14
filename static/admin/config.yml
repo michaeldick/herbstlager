@@ -28,8 +28,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Datum Anlass", name: "date", widget: "date"}
-      - {label: "Gültig von", name: "gueltigVon", widget: "datetime"}
-      - {label: "Gültig bis", name: "gueltigBis", widget: "datetime"}
+      - {label: "Sichtbar", name: "sichtbar", widget: "boolean", default: true}
       - {label: "Bild Gross", name: "bildgross", widget: "image"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}

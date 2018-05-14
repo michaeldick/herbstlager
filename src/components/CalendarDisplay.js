@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import moment from 'moment'
 import 'moment/locale/de';
 import styles from './CalendarDisplay.module.css'
-console.log(styles);
 
 moment.locale('de')
 const CalendarDisplay = ({ displayDate }) => (

@@ -22,7 +22,8 @@
     "moment": "^2.22.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-responsive-carousel": "^3.1.37"
   },
   "keywords": [
     "gatsby"

@@ -28,7 +28,6 @@ export default class EventPage extends React.Component {
                     </Link>
 
                     <small>am: {post.frontmatter.date}</small>
-                    <small>vom {post.frontmatter.gueltigVon} bis zum {post.frontmatter.gueltigBis}</small>
                   </p>
                   <p>
                     {post.excerpt}
@@ -69,8 +68,7 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
-            gueltigVon(formatString: "MMMM DD, YYYY")
-            gueltigBis(formatString: "MMMM DD, YYYY")
+            sichtbar
             bildgross
           }
         }
