@@ -57,7 +57,7 @@ EventStackedPage.propTypes = {
 
 export const pageQuery = graphql`
   query EventStackedQuery {
-    allMarkdownRemark(filter: {sichtbar: {eq: true}}, sort: {order: ASC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(filter:{frontmatter:{sichtbar:{eq:true}}}, sort: {order: ASC, fields: [frontmatter___date] }) {
       edges {
         node {
           excerpt(pruneLength: 400)

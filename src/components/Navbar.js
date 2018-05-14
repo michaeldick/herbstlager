@@ -38,7 +38,7 @@ class Navbar extends React.Component {
           </div>
           <div className={"navbar-menu is-mobile " + (this.state.navToggle ? "is-active" : "")} >
             <div className="navbar-start has-text-centered is-size-5 has-text-weight-bold">
-              <Link className="navbar-item is-mobile" to="/event">
+              <Link className="navbar-item is-mobile" to="/event-stacked">
                 <p className="has-text-white"><i className="fa fa-calendar"></i>
                   <br />Agenda</p>
               </Link>
