@@ -20,7 +20,7 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
 
   - name: "event"
-    label: "Event"
+    label: "Aktuelles"
     folder: "src/pages/event"
     create: true
     slug: "{{year}}-{{slug}}"
