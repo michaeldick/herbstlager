@@ -1,7 +1,7 @@
 ---
 templateKey: event-post
 title: Chuefladebingo
-date: 2018-06-04T20:41:07.276Z
+date: 2018-06-30T22:41:07+02:00
 sichtbar: true
 bildgross: /img/chue.jpg
 description: kei text
