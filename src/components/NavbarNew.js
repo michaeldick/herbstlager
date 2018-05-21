@@ -21,7 +21,7 @@ class NavbarNew extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-primary">
+      <nav className="navbar navbar-background is-primary">
         <div className="navbar-brand">
         <Link to="/" className="navbar-item">
               <figure className="image" style={{ width: 160 + 'px' }}>
@@ -37,24 +37,24 @@ class NavbarNew extends React.Component {
         <div id="navbarExampleTransparentExample" className={"navbar-menu " + (this.state.navToggle ? "is-active" : "")}>
           <div className="navbar-start has-text-centered is-size-5 has-text-weight-bold">
             <Link className="navbar-item" to="/event" onClick={this.toggleNav}>
-                <p className="has-text-black"><i className="fa fa-calendar"></i>
-                  <br />Agenda</p>
+                <p className="has-text-black"><i className="fa fa-calendar"></i>&nbsp;
+                 Agenda</p>
               </Link>
               <Link className="navbar-item" to="/anmeldung" onClick={this.toggleNav}>
-                <p className="has-text-black"><i className="fa fa-file-text-o"></i>
-                  <br />Anmeldung</p>
+                <p className="has-text-black"><i className="fa fa-file-text-o"></i>&nbsp;
+                  Anmeldung</p>
               </Link>
               <Link className="navbar-item" to="/about" onClick={this.toggleNav}>
-                <p className="has-text-black"><i className="fa fa-info"></i>
-                  <br />About</p>
+                <p className="has-text-black"><i className="fa fa-info"></i>&nbsp;
+                  About</p>
               </Link>
               <Link className="navbar-item" to="/contact" onClick={this.toggleNav}>
-                <p className="has-text-black"><i className="fa fa-envelope"></i>
-                  <br />Kontakt</p>
+                <p className="has-text-black"><i className="fa fa-envelope"></i>&nbsp;
+                  Kontakt</p>
               </Link>
               <Link className="navbar-item" to="/products" onClick={this.toggleNav}>
-                <p className="has-text-black"><i className="fa fa-question"></i>
-                  <br />Products</p>
+                <p className="has-text-black"><i className="fa fa-question"></i>&nbsp;
+                  Products</p>
               </Link>
               </div>
             </div>

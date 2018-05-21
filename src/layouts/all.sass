@@ -1,13 +1,31 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-$kaldi-red: #FD461E
+$kaldi-red: #009900
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 
 $section-padding: 2rem 1.5rem !default
+
+.navbar-background
+  background-image: url('../img/bg_white_s.png') !important
+  background-position: bottom center
+  background-repeat: no-repeat
+  background-size: contain
+  //background-attachment: fixed
+
+.navbar
+
+.navbar-menu
+  
+
+.navbar.is-primary .navbar-start > a.navbar-item:hover
+  background-color: #fafafa40 !important
+
+.navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active, .navbar.is-primary .navbar-brand .navbar-link:hover, .navbar.is-primary .navbar-brand .navbar-link.is-active
+  background-color: #fafafa40 !important
 
 .content .taglist
   list-style: none
@@ -42,10 +60,10 @@ $section-padding: 2rem 1.5rem !default
   margin-top: 0 !important
 
 .navbar-item p
-  background-color: lightgray;
-  padding: 12px;
-  border: 4px solid white
-  border-radius: 22px
+  background-color: #ffffff69
+  padding: 12px
+  border: 2px solid #fff
+  border-radius: 5px
 
 .carousel .slide
   background-color: white !important;

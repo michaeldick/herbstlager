@@ -21,8 +21,8 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-transparent" style={{ height: '140px', zIndex:10 }}>
-        <div className="container">
+      <nav className="navbar  is-transparent" style={{ height: '140px', zIndex:10 }}>
+        <div className="container navbar-background">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
               <figure className="image" style={{ width: 160 + 'px' }}>
