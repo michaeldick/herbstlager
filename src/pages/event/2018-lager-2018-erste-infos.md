@@ -1,17 +1,23 @@
 ---
 templateKey: event-post
 title: Lager 2018 - erste Infos
-date: 2018-05-01T18:33:36.496Z
+date: 2018-09-29T00:00:00+02:00
 sichtbar: true
-bildgross: /img/products-grid2.jpg
+bildgross: /img/jugend011215284204.jpg
 description: Vorab einige Informationen
-tags:
-  - news lager
 ---
-Fürs diesjährige Herbstlager fahren wir nach XY.
+Fürs diesjährige Herbstlager fahren wir nach Schwarzsee im schönen Kanton Fribourg. 
 
-In den Sommerferien werden die Anmeldungen verschickt.
+Das Lager findet vom 29.9- 6.10.18 statt.
 
-Weitere Infos.... TEA TIME
+as Lagerhaus (Haus der Jugend) befindet sich leicht oberhalb des Schwarzsee und gewährt somit eine unvergessliche Aussicht. 
 
-Bis bald!
+Es gibt viel Platz rund ums Haus für Spiel und Spass. 
+
+Gleich nach den Sommerferien werden die Anmeldeformulare Online verfügbar sein und in den Schulen ausgeteilt.
+
+Weitere Infos folgen nach der Anmeldung. 
+
+Wir freuen uns jetzt schon auf eine unvergessliche Woche und hoffen auf viele Teilnehmende. 
+
+Das Leitungsteam vom HeLa 2018
