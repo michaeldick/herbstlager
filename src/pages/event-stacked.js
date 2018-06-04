@@ -30,7 +30,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(filter:{frontmatter:{sichtbar:{eq:true}}}, sort: {order: ASC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 600)
           id
           fields {
             slug
