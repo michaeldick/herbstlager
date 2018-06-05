@@ -37,22 +37,26 @@ class NavbarNew extends React.Component {
               <p className="has-text-black"><i className="fa fa-calendar"></i>&nbsp;
                  Agenda</p>
             </Link>
-            <Link className="navbar-item" to="/anmeldung" onClick={this.toggleNav}>
+            {/* <Link className="navbar-item" to="/anmeldung" onClick={this.toggleNav}>
               <p className="has-text-black"><i className="fa fa-file-text-o"></i>&nbsp;
                   Anmeldung</p>
-            </Link>
+            </Link> 
             <Link className="navbar-item" to="/about" onClick={this.toggleNav}>
               <p className="has-text-black"><i className="fa fa-info"></i>&nbsp;
                   About</p>
+            </Link>*/}
+            <Link className="navbar-item" to="/lager2018" onClick={this.toggleNav}>
+              <p className="has-text-black"><i className="fa fa-map-signs"></i>&nbsp;
+                  Lager 2018</p>
             </Link>
             <Link className="navbar-item" to="/contact" onClick={this.toggleNav}>
               <p className="has-text-black"><i className="fa fa-envelope"></i>&nbsp;
                   Kontakt</p>
             </Link>
-            <Link className="navbar-item" to="/products" onClick={this.toggleNav}>
+           {/*  <Link className="navbar-item" to="/products" onClick={this.toggleNav}>
               <p className="has-text-black"><i className="fa fa-question"></i>&nbsp;
                   Products</p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>

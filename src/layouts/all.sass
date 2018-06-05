@@ -7,10 +7,18 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 
+$break-small: 920px
+$break-large: 1200px
+
 $section-padding: 2rem 1.5rem !default
 
 .navbar-background
-  background-image: url('../img/bg_desktop.png') !important
+  @media screen and (max-width: $break-small) 
+    background-image: url('../img/bg_mobile.png') !important
+   
+  @media screen and (min-width: $break-large)
+    background-image: url('../img/bg_desktop.png') !important
+  
   background-position: bottom center
   background-repeat: no-repeat
   background-size: contain
