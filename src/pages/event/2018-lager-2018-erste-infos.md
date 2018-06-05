@@ -1,16 +1,16 @@
 ---
 templateKey: event-post
 title: Lager 2018 - erste Infos
-date: 2018-09-29T00:00:00+02:00
+date: 2018-09-28T22:00:00.000Z
 sichtbar: true
-bildgross: /img/jugend011215284204.jpg
+bildgross: /img/haus-der-jugend_001.jpg
 description: Vorab einige Informationen
 ---
 Fürs diesjährige Herbstlager fahren wir nach Schwarzsee im schönen Kanton Fribourg. 
 
 Das Lager findet vom 29.9- 6.10.18 statt.
 
-as Lagerhaus (Haus der Jugend) befindet sich leicht oberhalb des Schwarzsee und gewährt somit eine unvergessliche Aussicht. 
+Das Lagerhaus (Haus der Jugend) befindet sich leicht oberhalb des Schwarzsee und gewährt somit eine unvergessliche Aussicht. 
 
 Es gibt viel Platz rund ums Haus für Spiel und Spass. 
 
