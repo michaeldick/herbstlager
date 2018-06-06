@@ -15,13 +15,17 @@ $section-padding: 2rem 1.5rem !default
 .navbar-background
   @media screen and (max-width: $break-small) 
     background-image: url('../img/bg_mobile.png') !important
+    background-position: bottom left
+    background-size: auto
    
   @media screen and (min-width: $break-large)
     background-image: url('../img/bg_desktop.png') !important
+    background-position: bottom center
+    background-size: contain
   
   background-position: bottom center
   background-repeat: no-repeat
-  background-size: contain
+  
   //background-attachment: fixed
 
 .navbar
@@ -61,14 +65,36 @@ $section-padding: 2rem 1.5rem !default
 
 // Helper Classes
 .full-width-image-container
-  width: 100vw
+  @media screen and (max-width: $break-small) 
+    width: 100vw
+    margin: 2em -50vw
+   
+  @media screen and (min-width: $break-large)
+    width: 100%
+    margin: 2em -50%
+
+  
   height: 400px
   position: relative
   left: 50%
   right: 50%
-  margin: 5em -50vw
   background-size: cover
   background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.full-width-container
+  @media screen and (max-width: $break-small) 
+    width: 100vw
+    margin: 2em -50vw
+   
+  @media screen and (min-width: $break-large)
+    width: 100%
+    margin: 2em -50%
+  position: relative
+  left: 50%
+  right: 50%
   display: flex
   justify-content: center
   align-items: center
