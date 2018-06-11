@@ -4,6 +4,7 @@ title: Lager 2018 - erste Infos
 date: 2018-09-28T22:00:00.000Z
 sichtbar: true
 bildgross: /img/haus-der-jugend_001.jpg
+anriss: 'Woah'
 description: Vorab einige Informationen
 ---
 Fürs diesjährige Herbstlager fahren wir nach Schwarzsee im schönen Kanton Fribourg. 

@@ -10,7 +10,12 @@ $primary-invert: $kaldi-red-invert
 $break-small: 920px
 $break-large: 1200px
 
-$section-padding: 2rem 1.5rem !default
+
+.section
+  @media screen and (max-width: $break-small) 
+    padding: 0.5rem 0rem !important
+  @media screen and (min-width: $break-large)
+    padding: 2rem 1.5rem !important
 
 .navbar-background
   @media screen and (max-width: $break-small) 
@@ -111,27 +116,37 @@ $section-padding: 2rem 1.5rem !default
   padding: 12px
   border: 2px solid #fff
   border-radius: 5px
-  
 
 .carousel .slide
   background-color: white !important;
 
 .carousel-title
-  background: rgba(0,0,0,0.4)
   padding-top: 0.5rem
   padding-left: 1em
   padding-bottom: 1em
   width: 100%
   height: 165px
 
+.carousel.carousel-slider
+  @media screen and (max-width: $break-small) 
+    width: 100vw!important
+
 .carousel-calendar
   
   position: absolute
-  top: -25px;
-  right: 0.4em;
+  top: -25px
+  right: 0.4em
 
 .carousel-status
   display: none  
+
+.eventOverlayText
+  padding: 10px 
+  @media screen and (max-width: $break-small) 
+    width: 100vw!important
+
+.is-overlay
+  background: rgba(0, 0, 0, 0.4)
 
 @import "~bulma"
 @import "~bulmaswatch/simplex/_variables"

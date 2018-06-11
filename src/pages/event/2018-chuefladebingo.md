@@ -4,6 +4,7 @@ title: Chuefladebingo
 date: 2018-06-30T20:41:07.000Z
 sichtbar: true
 bildgross: /img/chue.jpg
+anriss: 'Woah'
 description: 'Wetten, essen, trinken und gewinnen. '
 docs:
   - datei: /img/chue.jpg

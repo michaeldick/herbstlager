@@ -37,6 +37,7 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             bildgross
+            anriss
             sichtbar
           }
         }

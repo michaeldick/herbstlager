@@ -10,6 +10,7 @@ const EventPostPreview = ({ entry, widgetFor }) => (
     title={entry.getIn(['data', 'title'])}
     sichtbar={entry.getIn(['data', 'sichtbar'])}
     bildgross={entry.getIn(['data', 'bildgross'])}
+    anriss={entry.getIn(['data', 'anriss'])}
   />
 )
 
