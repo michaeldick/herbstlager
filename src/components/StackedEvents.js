@@ -20,25 +20,26 @@ const StackedEvents = ({ events }) => (
           .map(({ node: post }) => (
             <div key={post.id}>
               <div
-                className="content"
-                style={{ border: '1px solid #eaecee' }} >
-                <img src={post.frontmatter.bildgross} className="image" />
+                className="content carousel-bg-image"
+                style={{ border: '1px solid #eaecee', backgroundImage: 'url(' + post.frontmatter.bildgross + ')' }} >
+                {/* <img src={post.frontmatter.bildgross} className="image" /> */}
                 <div className="is-overlay">
                   <div className="carousel-title" style={{paddingBottom: '15px'}}>
 
-                    <div className="is-pulled-left" style={{ width: '60%', height: '45px' }}>
+                    <div className="is-pulled-left" style={{ width: '60%'}}>
                       <h2 className="is-pulled-left" >
+                        <br />
                         <Link to={post.fields.slug}>
                           <h5 className="has-text-white">{post.frontmatter.title} 
                           {/* <span className="is-hidden-desktop subtitle is-4 has-text-white">{' ' + moment(post.frontmatter.date).format('DD. MMMM YYYY')}</span> */}
                           </h5>
                         </Link>
-                      </h2>
+                      </h2><div style={{clear: 'both'}}></div>
+                      <div className="is-pulled-left has-text-white has-text-left eventOverlayText" >{post.frontmatter.anriss}</div>
                     </div>
                     <div className="is-pulled-right has-text-right has-text-white is-size-5" style={{ width: '40%', paddingRight: '15px' }} >
                       {moment(post.frontmatter.date).format("DD. MMMM YYYY")} 
                     </div>
-                    <div className="is-pulled-left has-text-white has-text-left eventOverlayText" >{post.anriss}</div>
                     <br />
                     <Link className="button is-small is-pulled-right" style={{marginRight: '5px'}} to={post.fields.slug}>
                     mehr →
@@ -47,6 +48,7 @@ const StackedEvents = ({ events }) => (
                       <CalendarDisplay className="" displayDate={post.frontmatter.date} />
                     </div> */}
                   </div>
+                  
                 </div>
               </div>
             </div>
