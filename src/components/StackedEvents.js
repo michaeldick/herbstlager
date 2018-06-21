@@ -35,7 +35,7 @@ const StackedEvents = ({ events }) => (
                           </h5>
                         </Link>
                       </h2><div style={{clear: 'both'}}></div>
-                      <div className="is-pulled-left has-text-white has-text-left eventOverlayText" >{post.frontmatter.anriss}</div>
+                      <div className="is-pulled-left has-text-white has-text-left eventOverlayText" >{post.excerpt}</div>
                     </div>
                     <div className="is-pulled-right has-text-right has-text-white is-size-5" style={{ width: '40%', paddingRight: '15px' }} >
                       {moment(post.frontmatter.date).format("DD. MMMM YYYY")} 
