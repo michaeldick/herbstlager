@@ -36,9 +36,57 @@ intro:
         Isabelle Müller
         Spitzname: Isa
         Kurs: Scharleiterkurs
-    - {}
-    - {}
-    - {}
+    - text: |-
+        Martin Uebelhard
+        Spitzname: Dinu
+    - text: |-
+        Pascal Felder
+        Spitzname: Fäudi, Päscu
+    - text: |-
+        Matias Uebelhard
+        Spitzname: Hügi
+    - text: |
+        Lukas Jenni
+        Spitzname: Lüku
+    - text: |+
+        Jan Müller
+        Spitzname: Jana Banana
+
+
+
+
+
+    - text: |-
+        Tim Mengon
+        Spitzname: Timi
+    - text: |-
+        Rahel Kissling
+        Spitzname: Rähli
+        Kurs: Scharleiterin
+    - text: |-
+        Celiné Studer
+        Spitzname: Cele
+        Kurs: Grundkurs
+    - text: |-
+        Rebecca Studer 
+        Spitzname: Pepsi
+        Kurs: Grundkurs
+    - text: |-
+        Rebeka Studer
+        Spitzname: Rebi
+        Kurs: Grundkurs
+    - text: Lara Gutzwiler
+    - text: |-
+        Anja Baumgartner
+        Spitzname: Annja; Gipfelibieger
+    - text: |-
+        Sascha Brunner
+        Spitzname: Säschu
+        Kurs: Grundkurs
+    - text: |-
+        Tiziana Berger
+        Spitzname: Tizi
+    - text: Nadja Bucher
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
