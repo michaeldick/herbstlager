@@ -1,8 +1,8 @@
 ---
 templateKey: lager2018-page
 title: Lager 2018
-image: /img/jumbotron.jpg
-heading: What we offer
+image: /img/lager18_pirat.jpg
+heading: Anmeldung fürs Lager 2018 in Schwarzsee (FR)
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
