@@ -83,7 +83,7 @@ export default class Anmeldung extends React.Component {
   render() {
     return (
       <section className="section">
-        <form name="anmeldung" method="POST" data-netlify-honeypot="bot-field" data-netlify="true">
+        <form name="anmeldung" method="POST" action="/angemeldet" data-netlify-honeypot="bot-field" data-netlify="true">
           <input type="hidden" name="form-name" value="anmeldung" />
           <div className="columns">
             <div className="column is-4 is-offset-2">
@@ -157,7 +157,7 @@ export default class Anmeldung extends React.Component {
               <div className="field">
                 <label className="label">Name der Eltern</label>
                 <div className="control">
-                  <input className="input" type="text" value={this.state.nameDerEltern} name="telefon"
+                  <input className="input" type="text" value={this.state.nameDerEltern} name="nameDerEltern"
                     onChange={this.handleInputChange} />
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Klasse</label>
                 <div className="control">
                   <div className="select">
-                    <select>
+                    <select name="klasse">
                       <option>Bitte wählen:</option>
                       <option>3</option>
                       <option>4</option>
