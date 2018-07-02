@@ -16,6 +16,8 @@ export default class Anmeldung extends React.Component {
       email: '',
       telefon: '',
       alter: '',
+      klasse: '',
+      geburtsdatum: '',
       nameDerEltern: '',
       formErrors: { name: '', vorname: '', email: '' },
       formValid: false
@@ -160,17 +162,26 @@ export default class Anmeldung extends React.Component {
                 </div>
               </div>
               <div className="field">
-                <label className="label">Alter</label>
+                <label className="label">Geburtsdatum</label>
+                <div className="control">
+                  <input className="input" type="text" value={this.state.geburtsdatum} name="geburtsdatum"
+                    onChange={this.handleInputChange} />
+                </div>
+              </div>
+              <div className="field">
+                <label className="label">Klasse</label>
                 <div className="control">
                   <div className="select">
                     <select>
                       <option>Bitte wählen:</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
                       <option>7</option>
                       <option>8</option>
                       <option>9</option>
                       <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
                     </select>
                   </div>
                 </div>
