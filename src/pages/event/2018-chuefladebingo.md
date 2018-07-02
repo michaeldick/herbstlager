@@ -1,10 +1,10 @@
 ---
 templateKey: event-post
 title: Chuefladebingo
+anriss: Woah
 date: 2018-06-30T20:41:07.000Z
 sichtbar: true
 bildgross: /img/chue.jpg
-anriss: 'Woah'
 description: 'Wetten, essen, trinken und gewinnen. '
 docs:
   - datei: /img/chue.jpg
@@ -19,3 +19,10 @@ Dieses Jahr wird es zusätzlich zum Chuefladebingo noch einen gemütlichen Grill
 Gewinnnummern können bei der Scharleitung für 5.- gekauft werden. 
 
 Wir freuen uns jetzt schon auf ein lüpfiges Fest.
+
+# Die Gewinner:
+
+1. **Sonja Frey**
+2. **Marlene von Arx**
+3. **Fabian Bürgi**
+4. **Konrad Baumgartner**
