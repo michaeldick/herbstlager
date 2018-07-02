@@ -1,7 +1,7 @@
 ---
 templateKey: lager2018-page
 title: Lager 2018
-image: /img/lager18_pirat.jpg
+image: /img/lager18_pirat_breit.png
 heading: Anmeldung fürs Lager 2018 in Schwarzsee (FR)
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
