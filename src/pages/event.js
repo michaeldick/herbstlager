@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import moment from 'moment'
 import CalendarDisplay from '../components/CalendarDisplay'
 
 export default class EventPage extends React.Component {
@@ -23,22 +24,24 @@ export default class EventPage extends React.Component {
                   style={{ border: '1px solid #eaecee', padding: '2em 4em', width: '800px' }} >
                   <img src={post.frontmatter.bildgross} />
                   <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
+                    <Link className="has-text-primary title is-size-4 " to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
 
-                    <small>am: {post.frontmatter.date}</small>
+                    <p className="is-size-6 pull-right">  {moment(post.frontmatter.date).format("DD. MMMM YYYY")}</p>
                   </p>
                   <p>
                     {post.excerpt}
                     <br />
                     <br />
                     <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
+                      Weiterlesen  →
                   </Link>
                   </p>
-                  <div><CalendarDisplay displayDate={post.frontmatter.date} /></div>
-                </div></div>
+                </div>
+                <br />
+              </div>
+
             ))}
         </div>
       </section>

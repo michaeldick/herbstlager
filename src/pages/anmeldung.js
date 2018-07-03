@@ -1,5 +1,12 @@
 import React from 'react'
 import FormErrors from '../components/FormErrors'
+import { navigateTo } from "gatsby-link";
+
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
 export default class Anmeldung extends React.Component {
   constructor(props) {
@@ -79,11 +86,26 @@ export default class Anmeldung extends React.Component {
     this.setState({ formValid: this.state.nameValid && this.state.vornameValid });
   }
 
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
+
 
   render() {
     return (
       <section className="section">
-        <form name="anmeldung" method="POST" action="/angemeldet" data-netlify-honeypot="bot-field" data-netlify="true">
+        <form name="anmeldung" method="POST" action="/angemeldet" data-netlify-honeypot="bot-field" data-netlify="true" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="anmeldung" />
           <div className="columns">
             <div className="column is-4 is-offset-2">

@@ -1,6 +1,6 @@
 ---
 templateKey: event-post
-title: Chuefladebingo
+title: Chuefladebingo (Gewinner aktualisiert)
 anriss: Woah
 date: 2018-06-30T20:41:07.000Z
 sichtbar: true
@@ -19,6 +19,8 @@ Dieses Jahr wird es zusätzlich zum Chuefladebingo noch einen gemütlichen Grill
 Gewinnnummern können bei der Scharleitung für 5.- gekauft werden. 
 
 Wir freuen uns jetzt schon auf ein lüpfiges Fest.
+
+# Update
 
 # Die Gewinner:
 
