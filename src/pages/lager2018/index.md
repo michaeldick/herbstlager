@@ -17,6 +17,6 @@ Wer: alle Kinder von der 3. -10. Klasse (Niederbuchsiten und Umgebung)
 
 Weitere Infos folgen per Mail nach dem Anmeldeschluss. 
 
-Der Elternabend findet voraussichtlich am 03.09.2018 statt.
+Der Elternabend findet am 03.09.2018 statt.
 
 [Online-Anmeldung](/anmeldung) oder [Anmeldetalon](/img/anmeldung_lager_2018.pdf) zum ausdrucken
