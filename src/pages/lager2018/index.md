@@ -9,7 +9,7 @@ Wo: Schwarzsee, nähere Infos folgen
 
 Wer: alle Kinder von der 3. -10. Klasse (Niederbuchsiten und Umgebung)
 
-**Kosten: **
+## Kosten: 
 
 * Fr. 180.- pro Kind  
 * Fr. 160.- pro Kind (ab 2 oder mehr Kinder pro Familie)
