@@ -49,7 +49,7 @@ class NavbarNew extends React.Component {
               <p className="has-text-black"><i className="fa fa-map-signs"></i>&nbsp;
                   Lager 2018</p>
             </Link>
-            <Link className="navbar-item" to="/contact" onClick={this.toggleNav}>
+            <Link className="navbar-item" to="/kontakt" onClick={this.toggleNav}>
               <p className="has-text-black"><i className="fa fa-envelope"></i>&nbsp;
                   Kontakt</p>
             </Link>
