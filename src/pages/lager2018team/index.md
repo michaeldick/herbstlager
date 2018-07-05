@@ -1,13 +1,14 @@
 ---
-templateKey: 'lager2018team-page'
-path: /lager2018team
+templateKey: lager2018team-page
 title: Lagerleitung 2018
 team:
   mitglieder:
-    - name: Michael Perriard
-      image: /img/michael.jpg
-    - name: Jasmin Uebelhard
-      image: /img/jasmin.jpg
-    - name: Raphael von Arx
-      image: /img/raphael.jpg
-    
+    - image: /img/michael.jpg
+      name: Michael Perriard
+    - image: /img/jasmin.jpg
+      name: Jasmin Uebelhard
+    - image: /img/raphael.jpg
+      name: Raphael von Arx
+    - name: Testi Tester
+---
+
