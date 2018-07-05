@@ -73,4 +73,11 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/lager2018team/index.md"
+        label: "Lager 2018 Team"
+        name: "lager2018team"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lager2018team-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Team, name: team, widget: object, fields: [ {label: Mitglieder, name: mitglieder, widget: list, fields: [{label: Name, name: name, widget: string},{label: Image, name: image, widget: image}]}]}  
           
