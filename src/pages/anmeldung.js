@@ -194,7 +194,7 @@ export default class Anmeldung extends React.Component {
                 <label className="label">Klasse</label>
                 <div className="control">
                   <div className="select">
-                    <select name="klasse">
+                    <select name="klasse" onChange={this.handleInputChange}>
                       <option>Bitte wählen:</option>
                       <option>3</option>
                       <option>4</option>
