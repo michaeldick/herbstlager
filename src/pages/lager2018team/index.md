@@ -10,38 +10,38 @@ team:
     - image: /img/raphael.jpg
       name: Raphael von Arx
     - name: Laura Fux
-      image: /img/platzhalter.png
+      image: /img/laurafux.jpg
     - name: Rahel Kissling
-      image: /img/platzhalter.png
+      image: /img/rahelkissling.jpg
     - name: Isabelle Müller
-      image: /img/platzhalter.png
+      image: /img/isabellemueller.jpg
     - name: Celiné Studer
-      image: /img/platzhalter.png
+      image: /img/celinestuder.jpg
     - name: Anja Baumgartner
-      image: /img/platzhalter.png
+      image: /img/anjabaumgartner.jpg
     - name: Tiziana Berger
-      image: /img/platzhalter.png
+      image: /img/tizianaberger.jpg
     - name: Rebecca Studer
-      image: /img/platzhalter.png
+      image: /img/rebeccastuder.jpg
     - name: Rebeka Studer
-      image: /img/platzhalter.png
+      image: /img/rebekastuder.jpg
     - name: Lara Zeltner
-      image: /img/platzhalter.png
+      image: /img/larazeltner.jpg
     - name: Lukas Jenni
-      image: /img/platzhalter.png
+      image: /img/lukasjenni.jpg
     - name: Matias Uebelhard
-      image: /img/platzhalter.png
+      image: /img/matiasuebelhard.jpg
     - name: Martin Uebelhard
-      image: /img/platzhalter.png
+      image: /img/martinuebelhard.jpg
     - name: Pascal Felder
-      image: /img/platzhalter.png
+      image: /img/pascalfelder.jpg
     - name: Tim Mengon
       image: /img/platzhalter.png
     - name: Jan Müller
       image: /img/platzhalter.png
     - name: Sascha Brunner
-      image: /img/platzhalter.png
+      image: /img/saschabrunner.jpg
     - name: Nadja Bucher
-      image: /img/platzhalter.png
+      image: /img/nadjabucher.jpg
 ---
 
