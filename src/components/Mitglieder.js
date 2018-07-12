@@ -4,15 +4,12 @@ import PropTypes from 'prop-types'
 const MitgliederGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map(item => (
-      <div key={item.image} className="column">
-        <section className="section">
-          <p className="has-text-centered">
-            <img alt="" src={item.image} />
-            <br />
-            {item.name}
-          </p>
-          <p>{item.text}</p>
-        </section>
+      <div key={item.name} className="column">
+        <div className="divTeamImage image is-128x128" style={{backgroundImage: 'url(' + item.image + ')'}}></div>
+          {/* <img alt="" src={item.image} className="image is-128x128" /> */}
+          <p className="has-text-centered">  {item.name}
+        </p>
+        <p>{item.text}</p>
       </div>
     ))}
   </div>
