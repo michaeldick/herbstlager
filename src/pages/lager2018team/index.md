@@ -25,8 +25,8 @@ team:
       image: /img/rebeccastuder.jpg
     - name: Rebeka Studer
       image: /img/rebekastuder.jpg
-    - name: Lara Zeltner
-      image: /img/larazeltner.jpg
+    - name: Lara Gutzwiler
+      image: /img/platzhalter.png
     - name: Lukas Jenni
       image: /img/lukasjenni.jpg
     - name: Matias Uebelhard
