@@ -19,4 +19,4 @@ Weitere Infos folgen per Mail nach dem Anmeldeschluss.
 
 Der Elternabend findet am 03.09.2018 statt.
 
-[Online-Anmeldung](/anmeldung) oder [Anmeldetalon](/img/anmeldung_lager_2018.pdf) zum ausdrucken
+
