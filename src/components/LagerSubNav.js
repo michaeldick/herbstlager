@@ -8,7 +8,7 @@ const LagerSubNav = ({ }) => (
       {/* <div className="column has-text-centered"><Link to="/anmeldung"><p className="button is-primary">Anmeldung</p></Link></div> */}
       <div className="column has-text-centered"><Link to="/#"><p className="button is-primary" disabled>Tagebuch</p></Link></div>
       <div className="column has-text-centered"><Link to="/lager2018team"><p className="button is-primary">Lagerleitung</p></Link></div>
-      <div className="column has-text-centered"><Link to="/img/Hela_2018_Lagerbuechli.pdf"><p className="button is-primary">Lagerb&uml;echli</p></Link></div>
+      <div className="column has-text-centered"><Link to="/img/Hela_2018_Lagerbuechli.pdf"><p className="button is-primary">Lagerb&uuml;echli</p></Link></div>
     </div>
   </div>
 )
