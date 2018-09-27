@@ -23,6 +23,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
+    "react-images": "^0.5.19",
     "react-responsive-carousel": "^3.1.37"
   },
   "keywords": [
@@ -31,7 +32,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "start": "npm run develop",
+    "start": "yarn develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",

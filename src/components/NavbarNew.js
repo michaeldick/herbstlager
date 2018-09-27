@@ -45,6 +45,10 @@ class NavbarNew extends React.Component {
               <p className="has-text-black"><i className="fa fa-info"></i>&nbsp;
                   About</p>
             </Link>*/}
+            {/* <Link className="navbar-item" to="/tagebuch2018" onClick={this.toggleNav}>
+              <p className="has-text-black"><i className="fa fa-newspaper-o"></i>&nbsp;
+                  Tagebuch</p>
+            </Link> */}
             <Link className="navbar-item" to="/lager2018" onClick={this.toggleNav}>
               <p className="has-text-black"><i className="fa fa-map-signs"></i>&nbsp;
                   Lager 2018</p>

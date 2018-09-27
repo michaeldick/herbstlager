@@ -40,7 +40,22 @@ collections:
         fields:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Datei", name: "datei", widget: "file"}
-              
+  - name: "lager2018berichte"
+    label: "Tagebuch Lager 2018"
+    folder: "src/pages/tagebuch2018"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "tagebuch2018-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sichtbar", name: "sichtbar", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - name: "docs"
+        label: "Bilder"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Bild", name: "bild", widget: "image"}
   - name: "pages"
     label: "Seiten"
     files:
