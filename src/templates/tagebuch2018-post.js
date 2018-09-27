@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import moment from 'moment'
 import Content, { HTMLContent } from '../components/Content'
+import FeatureGrid from '../components/Features';
 
 export const Tagebuch2018PostTemplate = ({
   content,
@@ -12,8 +13,6 @@ export const Tagebuch2018PostTemplate = ({
   description,
   title,
   sichtbar,
-  bildgross,
-  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -30,9 +29,10 @@ export const Tagebuch2018PostTemplate = ({
             <p>{description}</p>
             <PostContent content={content} />
           </div>
-          <div className="column" style={{width: '75px'}}> {moment(date).format("DD. MMMM YYYY")} </div>
+        
         </div>
       </div>
+     <FeatureGrid gridItems={galerie.bilder} />>
     </section>
   )
 }
@@ -43,6 +43,9 @@ Tagebuch2018PostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
+  galerie: PropTypes.shape({
+    bilder: PropTypes.array,
+  }),
 }
 
 const Tagebuch2018Post = ({ data }) => {
@@ -56,7 +59,7 @@ const Tagebuch2018Post = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Event`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
-      date={post.frontmatter.date}
+      galerie={post.frontmatter.galerie}
     />
   )
 }
@@ -80,8 +83,7 @@ export const pageQuery = graphql`
         bildgross
         title
         description
-        tags
-        anriss
+        galerie
       }
     }
   }
