@@ -50,7 +50,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sichtbar", name: "sichtbar", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: Galerie, name: galerie, widget: object, fields: [{label: Bilder, name: bilder, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
+      # - {label: Galerie, name: galerie, widget: object, fields: [{label: Bilder, name: bilder, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
       # - name: "docs"
       #   label: "Bilder"
       #   widget: "list"

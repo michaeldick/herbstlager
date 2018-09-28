@@ -27,12 +27,14 @@ export const Tagebuch2018PostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <div id="divPostContent" className="divPostContent">
             <PostContent content={content} />
+            </div>
           </div>
         
         </div>
       </div>
-     <FeatureGrid gridItems={galerie.bilder} />>
+     {/* <FeatureGrid gridItems={galerie.bilder} />  */}
     </section>
   )
 }
@@ -42,10 +44,9 @@ Tagebuch2018PostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
-  galerie: PropTypes.shape({
-    bilder: PropTypes.array,
-  }),
+  // galerie: PropTypes.shape({
+  //   bilder: PropTypes.array,
+  // }),
 }
 
 const Tagebuch2018Post = ({ data }) => {
@@ -55,11 +56,10 @@ const Tagebuch2018Post = ({ data }) => {
     <Tagebuch2018PostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Event`} />}
+      description={post.frontmatter.description}  
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
-      galerie={post.frontmatter.galerie}
+      // galerie={post.frontmatter.galerie}
     />
   )
 }
@@ -68,6 +68,9 @@ Tagebuch2018Post.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
+  // galerie: PropTypes.shape({
+  //   bilder: PropTypes.array,
+  // }),
 }
 
 export default Tagebuch2018Post
@@ -83,7 +86,6 @@ export const pageQuery = graphql`
         bildgross
         title
         description
-        galerie
       }
     }
   }
