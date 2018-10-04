@@ -21,24 +21,25 @@ export default class EventPage extends React.Component {
               <div key={post.id}>
                 <div
                   className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em', marginRight: '0.5rem' }} >
-                  <img src={post.frontmatter.bildgross} />
-                  <div className="is-size-6 pull-right">  {moment(post.frontmatter.date).format("DD. MMMM YYYY")}</div>
-                  <span style={{display: 'block'}}>
-                    <Link className="has-text-primary title is-size-4 " to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
+                  style={{ border: '1px solid #eaecee', padding: '.5em .5em', marginRight: '0.5rem', maxWidth: '1200px' }} >
+                  <img src={post.frontmatter.bildgross} style={{ width: '100%' }} />
+                  <div><div className="is-size-6 pull-right">  {moment(post.frontmatter.date).format("DD. MMMM YYYY")}</div>
+                    <span style={{ display: 'inline-block' }}>
+                      <Link className="has-text-primary title is-size-4 " to={post.fields.slug}>
+                        {post.frontmatter.title}
+                      </Link>
 
-                   
-                  </span>
-                  <span style={{display: 'block'}}>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Weiterlesen  →
+
+                    </span>
+                    <span style={{ display: 'block' }}>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.fields.slug}>
+                        Weiterlesen  →
                   </Link>
-                  </span>
+                    </span>
+                  </div>
                 </div>
                 <br />
               </div>
