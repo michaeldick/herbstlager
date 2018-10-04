@@ -23,14 +23,15 @@ export default class EventPage extends React.Component {
                   className="content"
                   style={{ border: '1px solid #eaecee', padding: '2em 4em', marginRight: '0.5rem' }} >
                   <img src={post.frontmatter.bildgross} />
-                  <span>
+                  <div className="is-size-6 pull-right">  {moment(post.frontmatter.date).format("DD. MMMM YYYY")}</div>
+                  <span style={{display: 'block'}}>
                     <Link className="has-text-primary title is-size-4 " to={post.fields.slug}>
                       {post.frontmatter.title}
                     </Link>
 
-                    <p className="is-size-6 pull-right">  {moment(post.frontmatter.date).format("DD. MMMM YYYY")}</p>
+                   
                   </span>
-                  <span>
+                  <span style={{display: 'block'}}>
                     {post.excerpt}
                     <br />
                     <br />
