@@ -15,23 +15,21 @@ export const EventPostTemplate = ({
   sichtbar,
   bildgross,
   date,
-  helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
     <section className="section">
-      {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+            <div className="column" style={{ position: 'relative', right: '0px', float: 'right' }}> {moment(date).format("DD. MMMM YYYY")} </div>
             <h1 className="has-text-primary title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
           </div>
-          <div className="column" style={{width: '75px'}}> {moment(date).format("DD. MMMM YYYY")} </div>
         </div>
       </div>
     </section>
@@ -43,7 +41,6 @@ EventPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
 }
 
 const EventPost = ({ data }) => {
@@ -54,7 +51,6 @@ const EventPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Event`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       date={post.frontmatter.date}

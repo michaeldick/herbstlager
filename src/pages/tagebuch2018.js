@@ -21,7 +21,7 @@ export default class Tagebuch2018Page extends React.Component {
               <div key={post.id}>
                 <div
                   className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em', width: '800px' }} >
+                  style={{ border: '1px solid #eaecee', padding: '2em 4em', marginRight: '.5rem' }} >
                   <p>
                     <Link className="has-text-primary title is-size-4 " to={post.fields.slug}>
                       {post.frontmatter.title}
@@ -57,7 +57,7 @@ Tagebuch2018Page.propTypes = {
 
 export const pageQuery = graphql`
   query Tagebuch2018PageQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___datum] }) {
       edges {
         node {
           excerpt(pruneLength: 200)
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
             title
             templateKey
             sichtbar
+            datum
           }
         }
       }

@@ -26,8 +26,8 @@ class NavbarNew extends React.Component {
 
           </Link>
           <div className={"navbar-burger " + (this.state.navToggle ? "is-active" : "")}
-            onClick={this.toggleNav} data-target="navbarExampleTransparentExample" style={{ width: 6.25 + 'rem' }}>
-            <i className="fa fa-bars has-text-white" style={{ fontSize: 64 + 'pt' }}></i>
+            onClick={this.toggleNav} data-target="navbarExampleTransparentExample">
+            <i className="fa fa-bars has-text-white" style={{ fontSize: 44 + 'pt' }}></i>
           </div>
         </div>
 

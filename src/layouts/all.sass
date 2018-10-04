@@ -28,11 +28,13 @@ $break-large: 1200px
     background-image: url('../img/bg_mobile.png') !important
     background-position: bottom left
     background-size: auto
-   
-  @media screen and (min-width: $break-large)
+
+  @media screen and (min-width: $break-small)
     background-image: url('../img/bg_desktop.png') !important
     background-position: bottom center
     background-size: contain
+
+
   
   background-position: bottom center
   background-repeat: no-repeat
@@ -42,14 +44,17 @@ $break-large: 1200px
 .navbar
   .navbar-menu
 
+.navbar-burger
+  right: .3rem
+
 .hela-logo
   background-image: url('../img/logo_transparent.png') !important
   background-position: bottom center
   background-repeat: no-repeat
   background-size: contain
-  height: 8rem
-  width: 10rem
-  margin-top: 2rem
+  height: 6rem
+  width: 7rem
+  margin-top: 2.7rem
   margin-bottom: 0rem
   
 
@@ -179,6 +184,17 @@ $break-large: 1200px
   height: auto
   margin: 0 auto
   position: relative
+
+.contact-col img
+  margin-left: auto
+  margin-right: auto
+  display: block
+
+.contact-col p
+  text-align: center
+  
+
+
 
 @import "~bulma"
 @import "~bulmaswatch/simplex/_variables"

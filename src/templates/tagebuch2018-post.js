@@ -86,6 +86,7 @@ export const pageQuery = graphql`
         bildgross
         title
         description
+        datum
       }
     }
   }
